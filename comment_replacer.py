@@ -1,7 +1,7 @@
 import os
 
 target = "//\n// TODO: Add constructor logic here\n//\n"
-print("Enter a path to mangle.")
+print("Enter a path to mangle:")
 path = input()
 print(f"Searching for\n{target}\n")
 counter = 0
