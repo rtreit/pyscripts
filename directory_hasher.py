@@ -66,5 +66,5 @@ def HashDirectory(
     return
 
 
-HashDirectory('d:\\wdgit', recurse=True)
+HashDirectory('d:\\data', recurse=True)
 
