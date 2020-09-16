@@ -14,6 +14,7 @@ if recurse == True:
                 try:
                     with open(current_file, "r+", encoding='utf-8') as f:
                         content = f.read().replace("// TODO: Add constructor logic here\n//","")
+                        f.seek(0)
                         f.write(content)
                         f.truncate()
                 except Exception as e:
