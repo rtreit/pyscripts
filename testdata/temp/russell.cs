@@ -68,8 +68,7 @@
 |[[Logical atomism]]
 
 //
-// TODO: Add constructor logic here
-//
+
 
 
 |[[Logical form]]

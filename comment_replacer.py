@@ -9,4 +9,6 @@ for (root, dirs, files) in os.walk("."):
                 content = f.read().replace(
                     "// TODO: Add constructor logic here\n//", ""
                 )
-                f.seek(0).write(content).truncate()
+                f.seek(0)
+                f.write(content)
+                f.truncate()

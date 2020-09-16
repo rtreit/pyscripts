@@ -43,8 +43,7 @@ In 1944, ''[[The New York Times]]'' mentioned an imported canned pesto paste. In
 Pesto is traditionally prepared in a marble mortar with a wooden pestle. First, garlic and pine nuts are placed in the mortar and reduced to a cream,<ref name=CMPM/> and then the washed and dried basil leaves are added with coarse salt and ground to a creamy consistency. Only then is a mix of Parmigiano-Reggiano and Pecorino added. To help incorporate the cheese a little extra-virgin olive oil is added. In a tight jar (or simply in an air-tight plastic container), covered by a layer of extra-virgin olive oil, pesto can last in the refrigerator up to a week, and can be frozen for later use.<ref name="Consorzio del pesto Genovese recipe">{{Cite web|work=mangiareinliguria.it|url=http://www.mangiareinliguria.it/consorziopestogenovese/pestogenovese.php|title=Consorzio del pesto Genovese recipe|access-date=21 February 2008}}</ref>
 
 //
-// TODO: Add constructor logic here
-//
+
 
 
 === Accompaniments ===
