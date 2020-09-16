@@ -66,5 +66,4 @@ def HashDirectory(
     return
 
 
-HashDirectory('d:\\data', recurse=True)
-
+HashDirectory("d:\\data", recurse=True)
