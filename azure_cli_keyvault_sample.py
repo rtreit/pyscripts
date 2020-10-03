@@ -5,8 +5,8 @@ from azure.common.credentials import get_cli_profile
 
 def get_secret_from_key_vault(
     secret_name,
-    vault="",  # vault name goes here
-    tenant="",  # tenant for Azure subscription
+    vault="",  # TODO: vault name goes here
+    tenant="",  # TODO: tenant for Azure subscription
 ):
     profile = get_cli_profile()
 
