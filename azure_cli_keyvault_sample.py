@@ -3,7 +3,7 @@ import sys, getopt
 from azure.common.credentials import get_cli_profile
 
 
-def GetSecretFromKeyVault(
+def get_secret_from_key_vault(
     secret_name,
     vault="",  # vault name goes here
     tenant="",  # tenant for Azure subscription
@@ -22,7 +22,7 @@ def GetSecretFromKeyVault(
 
 
 def main(secret):
-    secret = GetSecretFromKeyVault(secret)
+    secret = get_secret_from_key_vault(secret)
     print(secret)
 
 
