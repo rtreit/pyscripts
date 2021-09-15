@@ -4,7 +4,6 @@ from io import StringIO
 import requests
 from azure.common.credentials import get_cli_profile
 import json
-from azure.kusto.data.helpers import dataframe_from_result_table
 from tabulate import tabulate
 
 
@@ -18,7 +17,7 @@ def query_kusto_rest(
     kusto_tenant="",  # TODO: kusto tenant goes here
 ):
     cli_token = profile.get_access_token_for_resource(
-        resource=f"https://{kusto_cluster}.kusto.windows.net",
+        resource=f"https://{kusto_cluster}",
         username=profile.get_current_account_user(),
         tenant=kusto_tenant,
     )
@@ -26,12 +25,12 @@ def query_kusto_rest(
         "Authorization": f"bearer {cli_token}",
         "Accept": "application/json",
         "Content-Type": "application/json; charset=utf-8",
-        "Host": f"{kusto_cluster}.kusto.windows.net",
+        "Host": f"{kusto_cluster}",
     }
 
     params = {"db": f"{kusto_database}", "csl": f"{query}"}
 
-    url = f"https://{kusto_cluster}.kusto.windows.net/v1/rest/query"
+    url = f"https://{kusto_cluster}/v1/rest/query"
     r = requests.get(url, headers=headers, params=params)
     result = r.json()
     rows = result["Tables"][0]["Rows"]
