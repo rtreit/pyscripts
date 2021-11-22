@@ -12,7 +12,7 @@ profile = get_cli_profile()
 
 def query_kusto_rest(
     query,
-    kusto_cluster="",  # TODO: <cluster>.windef.kusto.net goes here
+    kusto_cluster="",  # TODO: kusto cluster (e.g. mycluster.kusto.windows.net)
     kusto_database="",  # TODO: kusto database goes here
     kusto_tenant="",  # TODO: kusto tenant goes here
 ):
