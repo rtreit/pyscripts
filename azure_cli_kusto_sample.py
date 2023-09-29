@@ -50,14 +50,7 @@ def main(cluster, db, tenant, query):
     df = query_kusto_rest(
         kusto_cluster=cluster, kusto_database=db, kusto_tenant=tenant, query=query
     )
-    print(
-        tabulate(
-            df,
-            headers="keys",
-            tablefmt="simple",
-            showindex="never",
-        )
-    )
+    print(tabulate(df, headers="keys", tablefmt="simple", showindex="never",))
 
 
 if __name__ == "__main__":

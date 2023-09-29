@@ -6,10 +6,10 @@ keyvault_secret = (os.environ["KEYVAULT_SECRET"],)
 
 
 def get_keyvault_access_token():
-    url = "https://login.microsoftonline.com/<tenant_id>/oauth2/token" # TODO: replace tenant ID with your tenant ID
+    url = "https://login.microsoftonline.com/<tenant_id>/oauth2/token"  # TODO: replace tenant ID with your tenant ID
     payload = {
         "grant_type": "client_credentials",
-        "client_id": "", # TODO: add application ID here
+        "client_id": "",  # TODO: add application ID here
         "client_secret": keyvault_secret,
         "resource": "https://vault.azure.net",
     }
