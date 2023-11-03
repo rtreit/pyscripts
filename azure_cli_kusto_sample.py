@@ -16,11 +16,10 @@ def query_kusto_rest(
     kusto_database="",  # TODO: kusto database goes here
     kusto_tenant="",  # TODO: kusto tenant goes here
 ):
-    cli_token = profile.get_access_token_for_resource(
+    cli_token = profile.get_raw_token(
         resource=f"https://{kusto_cluster}",
-        username=profile.get_current_account_user(),
-        tenant=kusto_tenant,
-    )
+    )[0][1]
+    
     headers = {
         "Authorization": f"bearer {cli_token}",
         "Accept": "application/json",
